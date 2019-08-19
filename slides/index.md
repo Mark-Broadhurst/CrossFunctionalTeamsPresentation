@@ -11,28 +11,28 @@
 ***
 
 ### What are T-Shaped People?
-![What are T-Shaped People](/images/tshaped_people.jpg)
+![What are T-Shaped People](images/tshaped_people.jpg)
 
 ---
 
 ### Skills Matrix
-![Skills Matix](/images/SkillsMatrix.png)
+![Skills Matix](images/SkillsMatrix.png)
 
 ---
 
 ### I Shaped People
-![I Shaped People](/images/IShaped.png)
+![I Shaped People](images/IShaped.png)
 
 ---
 
 ### Generalists
 
-![Generalists](/images/Generalist.png)
+![Generalists](images/Generalist.png)
 
 ---
 
 ### T-Shaped people
-![T-Shaped People](/images/TShaped.png)
+![T-Shaped People](images/TShaped.png)
 
 
 ***
