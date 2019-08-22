@@ -172,11 +172,15 @@
 <span class="l">10: </span>
 <span class="l">11: </span>
 <span class="l">12: </span>
+<span class="l">13: </span>
+<span class="l">14: </span>
 </pre></td>
 <td class="snippet"><pre class="fssnip"><code lang="java">public void updateProfileInView(Profile profile) {
-    Fragment currentFragment = getFragmentManager().findFragmentById(R.id.demographic_container);
+    Fragment currentFragment = getFragmentManager()
+        .findFragmentById(R.id.demographic_container);
     if (currentFragment != null) {
-        Log.d(logTag(), "updateProfileInView() - " + currentFragment.getClass().getSimpleName());
+        Log.d(logTag(), "updateProfileInView() - " + 
+            currentFragment.getClass().getSimpleName());
         if (currentFragment instanceof UpdateableProfileFragment) {
             ((UpdateableProfileFragment) currentFragment).setUpdatedProfile(profile);
             return;
