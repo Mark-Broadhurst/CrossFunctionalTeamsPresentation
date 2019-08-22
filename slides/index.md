@@ -87,9 +87,11 @@
 
     [lang=java]
     public void updateProfileInView(Profile profile) {
-        Fragment currentFragment = getFragmentManager().findFragmentById(R.id.demographic_container);
+        Fragment currentFragment = getFragmentManager()
+            .findFragmentById(R.id.demographic_container);
         if (currentFragment != null) {
-            Log.d(logTag(), "updateProfileInView() - " + currentFragment.getClass().getSimpleName());
+            Log.d(logTag(), "updateProfileInView() - " + 
+                currentFragment.getClass().getSimpleName());
             if (currentFragment instanceof UpdateableProfileFragment) {
                 ((UpdateableProfileFragment) currentFragment).setUpdatedProfile(profile);
                 return;
