@@ -96,27 +96,6 @@
 </section>
 <section >
 <h4>What Langauge is this?</h4>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
-<span class="l">2: </span>
-<span class="l">3: </span>
-<span class="l">4: </span>
-<span class="l">5: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="cs"><span class="k">public</span> <span class="k">void</span> onShowPermissionRationale(
-    List&lt;String&gt; permissionList, 
-    RuntimePermissionRequest permissionRequest) {
-    permissionRequest.retry();
-}
-</code></pre></td></tr></table>
-</section>
-<section >
-<h4>What Langauge is this?</h4>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip"><code lang="java"></code></pre></td></tr></table>
-</section>
-<section >
-<h4>What Langauge is this?</h4>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -149,6 +128,94 @@
         }
         <span class="k">return</span> newObj;
     };
+}
+</code></pre></td></tr></table>
+</section>
+<section >
+<h4>What Langauge is this?</h4>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+<span class="l">11: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip"><code lang="swift">func switchToCountry(country:CountryName.Country){
+    
+    if(getCurrentCountry() != country.rawValue){
+        self.setCurrentCounntry(country: country.rawValue)
+        self.countryStringFileName = getLocalization(country: country)
+    }
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    appDelegate.checkAndUpdateAppConfigurationn()
+
+}
+</code></pre></td></tr></table>
+</section>
+<section >
+<h4>What Langauge is this?</h4>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+<span class="l">11: </span>
+<span class="l">12: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip"><code lang="java">public void updateProfileInView(Profile profile) {
+    Fragment currentFragment = getFragmentManager().findFragmentById(R.id.demographic_container);
+    if (currentFragment != null) {
+        Log.d(logTag(), "updateProfileInView() - " + currentFragment.getClass().getSimpleName());
+        if (currentFragment instanceof UpdateableProfileFragment) {
+            ((UpdateableProfileFragment) currentFragment).setUpdatedProfile(profile);
+            return;
+        }
+    }
+
+    Log.d(logTag(), "No UpdateableProfileFragment found");
+}
+</code></pre></td></tr></table>
+</section>
+<section >
+<h4>What Langauge is this?</h4>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="cs"><span class="k">public</span> <span class="k">void</span> onShowPermissionRationale(
+    List&lt;String&gt; permissionList, 
+    RuntimePermissionRequest permissionRequest) {
+    permissionRequest.retry();
+}
+</code></pre></td></tr></table>
+</section>
+<section >
+<h4>What Langauge is this?</h4>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip"><code lang="swift">var daysRemaining: Int {        
+    let calendar = Calendar.current
+    let components = calendar.dateComponents([.day], from: Date(), to: expiryDate)
+    let daysRemaining = components.day ?? 0
+    return max(daysRemaining, 0)
 }
 </code></pre></td></tr></table>
 </section>
