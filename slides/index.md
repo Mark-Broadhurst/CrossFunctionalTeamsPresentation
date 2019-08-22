@@ -42,24 +42,6 @@
     let a = 5
     let factorial x = [1..x] |> List.reduce (*)
     let c = factorial a
-
----
-
-#### What Langauge is this?
-
-    [lang=cs]
-    public void onShowPermissionRationale(
-        List<String> permissionList, 
-        RuntimePermissionRequest permissionRequest) {
-        permissionRequest.retry();
-    }
-
----
-
-#### What Langauge is this?
-
-    [lang=java]
-
 ---
 
 #### What Langauge is this?
@@ -80,6 +62,64 @@
             }
             return newObj;
         };
+    }
+
+---
+
+#### What Langauge is this?
+
+    [lang=swift]
+    func switchToCountry(country:CountryName.Country){
+        
+        if(getCurrentCountry() != country.rawValue){
+            self.setCurrentCounntry(country: country.rawValue)
+            self.countryStringFileName = getLocalization(country: country)
+        }
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.checkAndUpdateAppConfigurationn()
+
+    }
+
+---
+
+#### What Langauge is this?
+
+    [lang=java]
+    public void updateProfileInView(Profile profile) {
+        Fragment currentFragment = getFragmentManager().findFragmentById(R.id.demographic_container);
+        if (currentFragment != null) {
+            Log.d(logTag(), "updateProfileInView() - " + currentFragment.getClass().getSimpleName());
+            if (currentFragment instanceof UpdateableProfileFragment) {
+                ((UpdateableProfileFragment) currentFragment).setUpdatedProfile(profile);
+                return;
+            }
+        }
+
+        Log.d(logTag(), "No UpdateableProfileFragment found");
+    }
+
+---
+
+#### What Langauge is this?
+
+    [lang=cs]
+    public void onShowPermissionRationale(
+        List<String> permissionList, 
+        RuntimePermissionRequest permissionRequest) {
+        permissionRequest.retry();
+    }
+
+---
+
+#### What Langauge is this?
+
+    [lang=swift]
+    var daysRemaining: Int {        
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day], from: Date(), to: expiryDate)
+        let daysRemaining = components.day ?? 0
+        return max(daysRemaining, 0)
     }
 
 
